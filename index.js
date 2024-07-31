@@ -12,7 +12,7 @@ const installPlatform = () => {
 const installWidget = (widgetId) => {
   const widget = document.createElement('div');
   widget.classList.add(`elfsight-app-${widgetId}`);
-  document.body.prepend(widget);
+  document.body.appendChild(widget);
 };
 
 const searchParams = new URLSearchParams(window.location.search);
