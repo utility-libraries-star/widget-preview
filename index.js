@@ -19,5 +19,7 @@ const searchParams = new URLSearchParams(window.location.search);
 const widgetId = searchParams.get('widgetId');
 if (widgetId) {
   installPlatform();
-  installWidget(widgetId);
+
+  const widgetIdList = widgetId.split(',');
+  widgetIdList.forEach(installWidget);
 }
