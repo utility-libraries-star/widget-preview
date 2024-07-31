@@ -62,10 +62,10 @@ if (widgetId) {
 
   const widgetIdList = widgetId.split(',');
   widgetIdList.forEach((item) => {
-    installWidget(item);
-
     if (withButton) {
       installButton(item);
     }
+    
+    installWidget(item);
   });
 }
