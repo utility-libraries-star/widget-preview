@@ -40,11 +40,9 @@ const installButton = (widgetId) => {
   button.addEventListener('mouseout', () => {
     button.style.backgroundColor = '#f93262';
   });
-
   button.addEventListener('mousedown', () => {
     button.style.transform = 'scale(0.95)';
   });
-
   button.addEventListener('mouseup', () => {
     button.style.transform = 'scale(1)';
   });
