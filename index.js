@@ -50,7 +50,7 @@ const installButton = (widgetId) => {
     window.open(widgetLink, '_blank');
   });
 
-  button.textContent = className;
+  button.textContent = `Widget: ${widgetId}`;
   document.body.appendChild(button);
 };
 
